@@ -4,6 +4,8 @@
 
 **Projeto vencedor do Hackaton ONS 2025** 🏆 [Ver Certificado](./Certificado1oLugar.pdf)
 
+** Desenvolvido por: Daniel Lanzillota (dlserodio), Gustavo Andrade (GustavoAndrad), João Machado (J-cavadinha) e João Weydt (jpwf)**
+
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white) 
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.95%2B-009688?logo=fastapi&logoColor=white)
