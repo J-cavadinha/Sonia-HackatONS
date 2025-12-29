@@ -1,7 +1,5 @@
 # S.O.N.I.A Backend 🧠
 
-Este diretório contém o núcleo inteligente baseado em Python da plataforma S.O.N.I.A.
-
 ## Arquitetura
 
 O backend é estruturado como uma aplicação **FastAPI** modular:
@@ -22,15 +20,3 @@ O backend é estruturado como uma aplicação **FastAPI** modular:
 *   **ChromaDB**: Banco de dados vetorial open-source para busca semântica.
 *   **Pandas**: Para manipulação e análise de dados em memória.
 *   **Boto3**: SDK AWS para Python.
-
-## Variáveis de Ambiente
-
-Crie um arquivo `.env` em `sonia-back/` com o seguinte:
-
-```env
-OPENAI_API_KEY=sk-...
-AWS_ACCESS_KEY_ID=...
-AWS_SECRET_ACCESS_KEY=...
-AWS_REGION=sa-east-1
-MAX_FILES_LIMIT=15
-```

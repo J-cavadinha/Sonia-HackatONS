@@ -17,9 +17,3 @@ A interface moderna e responsiva para a plataforma S.O.N.I.A, construída com **
 *   **`src/services/`**: Integração com API.
     *   `api.js`: Configuração centralizada do Axios para comunicação com o backend.
 
-## Executando Localmente
-
-1.  `npm install`
-2.  `npm run dev`
-
-O aplicativo estará disponível em `http://localhost:5173`.

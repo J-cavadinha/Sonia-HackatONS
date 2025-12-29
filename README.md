@@ -1,6 +1,7 @@
 # S.O.N.I.A: Sistema de Otimização e Navegação em Informações Alocadas ⚡️🤖
 
-**Um Sistema Multi-Agente Revolucionário para Análise de Dados do ONS**
+**Um Sistema Multi-Agente para Democratização e Análise de Dados do ONS**
+**Projeto vencedor do Hackaton ONS 2025**
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white) 
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
@@ -11,7 +12,7 @@
 
 ---
 
-## 📋 Resumo Executivo
+## 📋 Resumo
 **S.O.N.I.A** é uma plataforma avançada impulsionada por IA, projetada para democratizar o acesso ao vasto e complexo Data Lake do **Operador Nacional do Sistema Elétrico (ONS)**. 
 
 Ao aproveitar a **IA Agêntica**, Grandes Modelos de Linguagem (LLMs) e Busca Vetorial, a S.O.N.I.A transforma dados técnicos e isolados em insights acionáveis através de uma interface simples de linguagem natural em português.
@@ -41,7 +42,7 @@ graph TD
 ```
 
 ## 🧠 Showcase de Engenharia de Dados e IA
-*Desenvolvido e Projetado por João Machado*
+*Projetado eDesenvolvido por João Machado*
 
 Este projeto representa uma implementação sofisticada de **RAG Agêntico (Retrieval-Augmented Generation)**, indo muito além de soluções simples de "chat com PDF".
 
@@ -74,21 +75,8 @@ Este projeto representa uma implementação sofisticada de **RAG Agêntico (Retr
 *   Node.js 18+
 *   Python 3.10+
 *   Credenciais AWS (configuradas para acesso ao bucket de Dados Abertos do ONS)
+*   LLM API key
 
-### Configuração do Backend
-```bash
-cd sonia-back
-pip install -r requirements.txt
-# Crie um arquivo .env com suas chaves OpenAI e AWS
-uvicorn src.app.main:app --reload
-```
-
-### Configuração do Frontend
-```bash
-cd sonia-front
-npm install
-npm run dev
-```
 
 ---
-*Criado para o **Hackathon ONS 2024**. Empoderando dados de energia através da inteligência.*
+*Criado para o **Hackathon ONS 2025**. Empoderando dados de energia através da inteligência.*
