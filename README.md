@@ -1,6 +1,7 @@
-# S.O.N.I.A: Sistema de Otimização e Navegação em Informações Alocadas ⚡️🤖
+# S.O.N.I.A
 
 **Um Sistema Multi-Agente para Democratização e Análise de Dados do ONS**
+
 **Projeto vencedor do Hackaton ONS 2025**
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white) 
