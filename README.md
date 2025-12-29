@@ -2,7 +2,7 @@
 
 **Um Sistema Multi-Agente para Democratização e Análise de Dados do ONS**
 
-**Projeto vencedor do Hackaton ONS 2025**
+**Projeto vencedor do Hackaton ONS 2025** 🏆 [Ver Certificado](./Certificado1oLugar.pdf)
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white) 
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
