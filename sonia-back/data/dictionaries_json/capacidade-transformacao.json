@@ -1,0 +1,195 @@
+{
+  "dataset_slug": "capacidade-transformacao",
+  "source_pdf": "dataset/capacidade-transformacao/DicionarioDados_Capacidade_Transformacao_RB.pdf",
+  "title": "DADOS DA CAPACIDADE DE TRANSFORMAÇÃO DA REDE BÁSICA",
+  "description": "Dados de potência nominal de transformadores da Rede de Operação, bem como seus agentes proprietários e tensões terminais. Observações: (1) Não são considerados transformadores elevadores de unidades geradoras, compensadores síncronos, compensadores estáticos, reatores e capacitores shunt. (2) Não são considerados transformadores de equipamentos de conversão de frequência. (3) Não são considerados transformadores defasadores e de regulação de tensão.",
+  "fields": [
+    {
+      "label": "Código do Subsistema do transformador",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Nome do Subsistema",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Sigla do Estado onde está localizada o transformador",
+      "code": "id_estado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Nome do Estado",
+      "code": "nom_estado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Tipo do Transformador (2 ou 3 enrolamentos)",
+      "code": "nom_tipotransformador",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "45 POSIÇÕES",
+      "nullable": false,
+      "max_length": 45
+    },
+    {
+      "label": "Nome do Agente Proprietário do Transformador",
+      "code": "nom_agenteproprietario",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Nome da subestação do Transformador",
+      "code": "nom_subestacao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Nome do Transformador",
+      "code": "nom_transformador",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "72 POSIÇÕES",
+      "nullable": false,
+      "max_length": 72
+    },
+    {
+      "label": "Código do Equipamento – Transformador",
+      "code": "cod_equipamento",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Data de liberação do transformador para operação do ONS",
+      "code": "dat_entradaoperacao",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Data de Desativação do Transformador O conteúdo NULL (ou vazio) representa que o transformador está ativo.",
+      "code": "dat_desativacao",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": true
+    },
+    {
+      "label": "Tensão no Enrolamento Primário do Transformador, em kV",
+      "code": "val_tensaoprimario_kv",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Tensão no Enrolamento Secundário do transformador, em kV",
+      "code": "val_tensaosecundario_kv",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Tensão no Enrolamento Terciário do Transformador, em kV",
+      "code": "val_tensaoterciario_kv",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Potência Nominal do Transformador, em MVA",
+      "code": "val_potencianominal_mva",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Tipo de Rede do transformador",
+      "code": "nom_tipoderede",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "15 POSIÇÕES",
+      "nullable": false,
+      "max_length": 15
+    },
+    {
+      "label": "Número da barra do lado primário",
+      "code": "num_barra_primario",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Número da barra do lado secundário",
+      "code": "num_barra_secundario",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "28-06-2022",
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": "14-09-2022",
+      "notes": "Alteração do layout – orientação do arquivo de Dicionário de Dados"
+    },
+    {
+      "version": "1.2",
+      "date": "28-04-2023",
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem"
+    },
+    {
+      "version": "1.3",
+      "date": "02-05-2023",
+      "notes": "Adição de uma coluna NOVA ao conjunto de dados chamada “cod_equipamento”"
+    },
+    {
+      "version": "1.4",
+      "date": "16-10-2023",
+      "notes": "- Adição de três colunas NOVAS ao conjunto de dados chamada “nom_tipoderede”, “num_barra_primario” e"
+    }
+  ]
+}

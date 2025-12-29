@@ -1,0 +1,91 @@
+{
+  "dataset_slug": "taxa_teif_teip",
+  "source_pdf": "dataset/taxa_teif_teip/DicionarioDados_Taxa_Teifa_Teip.pdf",
+  "title": null,
+  "description": "Taxa Equivalente de Indisponibilidade Forçada (TEIFa) e Taxa de Indisponibilidade Programada (TEIP) das usinas despachadas centralizadamente pelo ONS (Tipo I e Tipo II-A) dos últimos 60 meses. É disponibilizado a versão mais recente das respectivas taxas.",
+  "fields": [
+    {
+      "label": "Nome da Usina",
+      "code": "nom_usina",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Código Único do Empreendimento de Geração (CEG), estabelecido pela ANEEL",
+      "code": "cod_ceg",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": true,
+      "max_length": 30
+    },
+    {
+      "label": "Tipo da Usina",
+      "code": "id_tipousina",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Mês de Referência",
+      "code": "din_mes",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Nome da Taxa. Os valores possíveis são TEIFa ou TEIP",
+      "code": "nom_taxa",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "50 POSIÇÕES",
+      "nullable": false,
+      "max_length": 50
+    },
+    {
+      "label": "Valor da Taxa. Observação: O valor está compreendido em 0 e 1.",
+      "code": "val_taxa",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "format": "8 CASAS DECIMAIS",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número da Versão da Taxa",
+      "code": "num_versao",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Data do Cálculo da Taxa",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "HH:MM",
+      "nullable": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "15-01-2024",
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": "03-09-2024",
+      "notes": "O campo “val_taxa” pode ter o conteúdo com o valor zero, assim a regra foi modificada neste documento."
+    }
+  ]
+}

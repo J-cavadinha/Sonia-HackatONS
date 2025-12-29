@@ -1,0 +1,221 @@
+{
+  "dataset_slug": "ear_reservatorio_di",
+  "source_pdf": "dataset/ear_reservatorio_di/DicionarioDados_EarPorReservatorio.pdf",
+  "title": "DADOS EAR DIÁRIO POR RESERVATÓRIO (EAR MÁXIMA, EAR NO DIA EM MWMÊS, EAR NO DIA EM %)",
+  "description": "Dados de Energia Armazenada (EAR) em periodicidade diária por Reservatório. Esta grandeza representa a energia associada ao volume de água armazenado nos reservatórios que pode ser convertido em geração na própria usina e em todas as usinas a jusante da cascata. A grandeza de EAR considera o nível verificado nos reservatórios na data de referência. A grandeza de EAR máxima é a capacidade de armazenamento caso todos os reservatórios estivessem cheios. As grandezas de EAR para o subsistema à jusante consideram a utilização da água do reservatório para produzir energia em uma usina que está em um subsistema diferente.",
+  "fields": [
+    {
+      "label": "Nome do Reservatório",
+      "code": "nom_reservatorio",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "max_length": 20
+    },
+    {
+      "label": "Código do Reservatório nos modelos de planejamento",
+      "code": "cod_resplanejamento",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Tipo de Reservatório",
+      "code": "tip_reservatorio",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "40 POSIÇÕES",
+      "max_length": 40
+    },
+    {
+      "label": "Nome da Bacia",
+      "code": "nom_bacia",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "15 POSIÇÕES",
+      "max_length": 15
+    },
+    {
+      "code": "nom_ree",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "max_length": 20
+    },
+    {
+      "label": "Código do Subsistema",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "max_length": 2
+    },
+    {
+      "label": "Código do Subsistema Jusante",
+      "code": "id_subsistema_jusante",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "max_length": 2
+    },
+    {
+      "label": "Nome do Subsistema Jusante",
+      "code": "nom_subsistema_jusante",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "max_length": 20
+    },
+    {
+      "label": "Dia Observado da Medida",
+      "code": "ear_data",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD"
+    },
+    {
+      "label": "Valor de EAR para o próprio subsistema, em MWmês",
+      "code": "ear_reservatorio_subsistema_proprio_mwmes",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de EAR para o subsistema à jusante, em MWmês",
+      "code": "ear_reservatorio_subsistema_jusante_mwmes",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de EAR máxima para o próprio subsistema, em MWmês",
+      "code": "earmax_reservatorio_subsistema_proprio_mwmes",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de EAR máxima para o subsistema à jusante, em MWmês",
+      "code": "earmax_reservatorio_subsistema_jusante_mwmes",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de EAR, em % da EAR máxima",
+      "code": "ear_reservatorio_percentual",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "ear_total_mwmes",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "EAR máxima total no reservatório (no próprio subsistema + no subsistema jusante) em MWmês",
+      "code": "ear_maxima_total_mwmes",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Contribuição do reservatório para a EAR da Bacia, em %",
+      "code": "val_contribearbacia",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Contribuição do reservatório para a EAR máxima da Bacia, em %",
+      "code": "val_contribearmaxbacia",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Contribuição do reservatório para a EAR do próprio subsistema, em %",
+      "code": "val_contribearsubsistema",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Contribuição do reservatório para a EAR máxima do próprio subsistema, em %",
+      "code": "val_contribearmaxsubsistema",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "no subsistema jusante) em MWmês",
+      "code": "val_contribearsubsistemajusante",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "do subsistema jusante, em % Contribuição do reservatório para a EAR máxima do subsistema jusante, em %",
+      "code": "val_contribearmaxsubsistemajusante",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT"
+    },
+    {
+      "label": "Contribuição do reservatório para a EAR do SIN, em %",
+      "code": "val_contribearsin",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT"
+    },
+    {
+      "label": "Contribuição do reservatório para a EAR máxima do SIN, em %",
+      "code": "val_contribearmaxsin",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT"
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem de qualidade de"
+    },
+    {
+      "version": "1.2",
+      "date": null,
+      "notes": "Adição de novas colunas: “ear_total_mwmes”, “ear_maxima_total_mwmes”, “val_contribearbacia”, “val_contribearmaxbacia”,"
+    }
+  ]
+}

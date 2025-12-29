@@ -1,0 +1,59 @@
+{
+  "dataset_slug": "ind_confiarb_atls",
+  "source_pdf": "dataset/ind_confiarb_atls/DicionarioDados_Ind_Confiabilidade_RB_ATLS.pdf",
+  "title": "DADOS DOS INDICADORES DE CONFIABILIDADE DA REDE BÁSICA: ATLS – ATENDIMENTO AOS LIMITES SISTÊMICOS",
+  "description": "Indicador de Atendimento aos Limites Sistêmicos (ATLS), estabelecido conforme Submódulo 9.1 dos Procedimentos de Rede. O indicador é apresentado por fluxo, nas periodicidades mensal e anual.",
+  "fields": [
+    {
+      "label": "Nome do fluxo sistêmico",
+      "code": "nom_fluxo",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "8 POSIÇÕES",
+      "nullable": false,
+      "max_length": 8
+    },
+    {
+      "label": "Periodicidade do indicador. Os valores possíveis são: • AN :Acumulado no ano até o mês • ME: Mensal.",
+      "code": "id_periodicidade",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Mês do indicador",
+      "code": "din_referencia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Valor do indicador ATLS, em % nom_fluxo",
+      "code": "val_atls",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Tempo em que o fluxo permaneceu acima do limite estabelecido no período, em horas",
+      "code": "num_horasviolacao",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "26-02-2025",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

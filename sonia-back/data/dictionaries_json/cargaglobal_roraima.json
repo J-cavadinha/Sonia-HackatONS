@@ -1,0 +1,33 @@
+{
+  "dataset_slug": "cargaglobal_roraima",
+  "source_pdf": "dataset/cargaglobal_roraima/DicionarioDados_CargaGlobal_Roraima.pdf",
+  "title": "DADOS DE CARGA GLOBAL DE RORAIMA",
+  "description": "Carga global de Roraima no período de fevereiro-2022 a maio-2025, em atendimento ao Despacho nº 2.282, de 6 de agosto de 2024.",
+  "fields": [
+    {
+      "label": "Instante da Medida da Carga Global",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Valor da Carga Global em MW",
+      "code": "val_carga_mw",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "format": "3 casas decimais",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "25-06-2025",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

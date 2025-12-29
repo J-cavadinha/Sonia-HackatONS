@@ -1,0 +1,31 @@
+{
+  "dataset_slug": "res_volumeespera",
+  "source_pdf": "dataset/res_volumeespera/DicionarioDados_VolumeEsperaRecomendado.pdf",
+  "title": "DADOS HIDROLÓGICOS DE RESERVATÓRIOS - VOLUME DE ESPERA RECOMENDADO",
+  "description": "Valores do volume de espera utilizados na programação hidráulica de um reservatório. Representa o nível máximo a ser atingido, em % do volume útil, de forma que o reservatório tenha capacidade de amortecer cheias e evitar danos por inundação em locais a jusante a partir de restrições de vazões máximas e tempos de recorrência definidos pelos agentes de geração.",
+  "fields": [
+    {
+      "label": "Data da Medição",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD"
+    },
+    {
+      "label": "Valor do volume de espera recomendado, representando o máximo % do volume útil a ser atingido.",
+      "code": "val_volumeespera",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "03/10/2024 Criação do Dicionário de dados"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "dataset_slug": "modalidade_usina",
+  "source_pdf": "dataset/modalidade_usina/DicionarioDados_Modalidade_Operacao_Usina.pdf",
+  "title": "DADOS DO MODALIDADE DE OPERAÇÃO DA USINA",
+  "description": "As modalidades de operação de usinas são divididas em Tipo I, Tipos II-A, II-B e II-C e Tipo III. O processo de classificação de modalidade de operação de usinas é estabelecido pelas diretrizes contidas no Submódulo 7.2 dos Procedimentos de Rede e envolve análises sob responsabilidade do Operador a partir de informações fornecidas pelos agentes de geração.",
+  "fields": [
+    {
+      "label": "Nome da Usina",
+      "code": "nom_usina",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "255 POSIÇÕES",
+      "nullable": false,
+      "max_length": 255
+    },
+    {
+      "label": "Código Único do Empreendimento de Geração (CEG), estabelecido pela ANEEL",
+      "code": "ceg",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Nome da Modalidade de Operação da Usina",
+      "code": "nom_modalidadeoperacao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Valor da Potência Nominal Autorizada em MW",
+      "code": "val_potenciaautorizada",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Sigla do Centro de Operação da Usina",
+      "code": "sgl_centrooperacao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Nome do Ponto de Conexão",
+      "code": "nom_pontoconexao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "255 POSIÇÕES",
+      "nullable": true,
+      "max_length": 255
+    },
+    {
+      "label": "Sigla do Estado Onde Está Localizada a Usina",
+      "code": "id_estado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Nome do Estado",
+      "code": "nom_estado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Status da Usina perante a ANEEL. Os valores possíveis são A (ATIVO), I (INATIVO), P (PREVISTO), C (CANCELADO), O (OUTROS)",
+      "code": "sts_aneel",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "1 POSIÇÕES",
+      "nullable": true,
+      "max_length": 1
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "12/08/2024 Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "06/09/2024 Alteração do conteúdo do Campo \"Permite valor nulo\" para SIM."
+    }
+  ]
+}

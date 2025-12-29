@@ -1,0 +1,36 @@
+{
+  "dataset_slug": "ind-disponibilidade-geracao-sin",
+  "source_pdf": "dataset/ind-disponibilidade-geracao-sin/DicionarioDados_Ind_Disponibilidade_FuncaoGeracao_SIN.pdf",
+  "title": "DADOS DE INDICADORES DISPONIBILIDADE DE FUNÇÃO GERAÇÃO PARA O SIN – BASE MENSAL",
+  "description": "Indicadores de Disponibilidade das Funções Geração (DISPF), Indisponibilidade Programada das Funções Geração (INDISPPF) e Indisponibilidade Forçada das Funções Geração (INDISPFF), agregados para o SIN, em base mensal, conforme estabelecido no Submódulo 9.2 dos Procedimentos de Rede.",
+  "fields": [
+    {
+      "label": "e Indisponibilidade Forçada das Funções Geração (INDISPFF), agregados para o SIN, em base mensal, conforme estabelecido no Submódulo 9.2 dos Procedimentos de Rede. Data de Referência",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Indicador de Disponibilidade das Funções Geração (DISPF)",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Indicador de Indisponibilidade Programada das Funções Geração (INDISPPF)",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Indicador de Indisponibilidade Forçada das Funções Geração (INDISPFF)",
+      "data_type": "STRING"
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Edição do título do conjunto de dados."
+    }
+  ]
+}

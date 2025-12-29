@@ -1,0 +1,95 @@
+{
+  "dataset_slug": "balanco_energia_subsistema_ho",
+  "source_pdf": "dataset/balanco_energia_subsistema_ho/DicionarioDados_Balanco_Energia_Subsistema.pdf",
+  "title": "DADOS DO BALANÇO DE ENERGIA NOS SUBSISTEMAS",
+  "description": "Informações da carga e oferta de energia verificados em periodicidade horária por subsistema. A oferta é representada pelos valores de geração das usinas hidráulicas, térmicas, eólicas e fotovoltaicas, em MWmed.",
+  "fields": [
+    {
+      "label": "Código do Subsistema da Usina",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Nome do Subsistema",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Data de Referência",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Valor verificado de geração hidráulica, em MWmed",
+      "code": "val_gerhidraulica",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor verificado de geração térmica, em MWmed",
+      "code": "val_gertermica",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor verificado de geração eólica, em MWmed",
+      "code": "val_gereolica",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor verificado de geração fotovoltaica, em MWmed",
+      "code": "val_gersolar",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor verificado da carga, em MWmed",
+      "code": "val_carga",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor verificado do intercâmbio líquido, em MWmed",
+      "code": "val_intercambio",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "02-05-2023",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "dataset_slug": "ear_subsistema_di",
+  "source_pdf": "dataset/ear_subsistema_di/DicionarioDados_EarPorSubsistema.pdf",
+  "title": "DADOS DE EAR DIÁRIO POR SUBSISTEMA (EAR MÁXIMA, EAR NO DIA EM MWMÊS, EAR NO DIA EM %)",
+  "description": "Dados de Energia Armazenada (EAR) em periodicidade diária por Subsistema. Esta grandeza representa a energia associada ao volume de água armazenado nos reservatórios que pode ser convertido em geração na própria usina e em todas as usinas a jusante da cascata. A grandeza de EAR considera o nível verificado nos reservatórios na data de referência. A grandeza de EAR máxima é a capacidade de armazenamento caso todos os reservatórios estivessem cheios.",
+  "fields": [
+    {
+      "label": "Código do Subsistema",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Nome da Subsistema",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Dia observado da medida",
+      "code": "ear_data",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Valor de EAR máxima por subsistema na unidade de medida MWmês",
+      "code": "ear_max_subsistema",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de EAR verificada no dia por subsistema na unidade de medida MWmês",
+      "code": "ear_verif_subsistema_mwmes",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "ear_verif_subsistema_percentual",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem de qualidade de"
+    }
+  ]
+}

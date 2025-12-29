@@ -1,0 +1,104 @@
+{
+  "dataset_slug": "ind_providencia_ecpa_pcpa",
+  "source_pdf": "dataset/ind_providencia_ecpa_pcpa/DicionarioDados_Ind_Providencias_ECPA_PCPA.pdf",
+  "title": "DADOS DOS INDICADORES DE CUMPRIMENTO DE PROVIDÊNCIAS: ECPA E PCPA",
+  "description": "Indicadores de Evolução do Cumprimento às Providências (ECPA) e Pontualidade do Cumprimento às Providências (PCPA), estabelecidos conforme Submódulo 9.5 dos Procedimentos de Rede. Os indicadores são apresentados nas agregações SIN, Agente, Área de Atuação do Agente e Gestor, na periodicidade mensal.",
+  "fields": [
+    {
+      "label": "Tipo de agregação do indicador. Os valores possíveis são: • SIN • Agente • Área de Atuação do Agente • Gestor.",
+      "code": "dsc_agregacao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "200 POSIÇÕES",
+      "nullable": false,
+      "max_length": 200
+    },
+    {
+      "label": "Descrição da visão do indicador (SIN, Agente, Área de Atuação do Agente ou Gestor)",
+      "code": "dsc_caracteristica",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "200 POSIÇÕES",
+      "nullable": false,
+      "max_length": 200
+    },
+    {
+      "label": "Mês ou ano do indicador",
+      "code": "din_referencia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Número total de providências concluídas no período.",
+      "code": "num_nprc_concluidas",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número de providências com prazo atual estabelecido para o período, independentemente de já terem sido reprogramadas.",
+      "code": "num_nprp_programadas",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número de providências com prazo vencido em período anterior.",
+      "code": "num_nprat_atrasadas",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número de providências com prazo previsto para período futuro, porém já concluídas no período de avaliação.",
+      "code": "num_npra_antecipadas",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número total de providências concluídas no período que cumpriram o prazo estabelecido.",
+      "code": "num_nprcp_concluidas_prazo",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor do indicador de Evolução do Cumprimento às Providências dos Relatórios de Análise (ECPA).",
+      "code": "val_ecpa",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor do indicador de Pontualidade no Cumprimento às Providências dos Relatórios de Análise (PCPA).",
+      "code": "val_pcpa",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "26-02-2025",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "response": "Encontrei o conjunto de dados 'Capacidade de Geração de Energia'. Ele contém dados de capacidade instalada de usinas hidrelétricas, termelétricas e outras fontes de energia no Brasil. Com base nos dados mais recentes, a capacidade total de geração de energia hidrelétrica no país é de aproximadamente 109.000 MW, representando cerca de 60% da matriz energética brasileira. Criei um gráfico de barras para mostrar a distribuição por tipo de fonte energética.",
+  "chart": "bar",
+  "datasets_consumed": [
+    {
+      "path": "s3://ons-aws-prod-opendata/dataset/capacidade-geracao/"
+    },
+    {
+      "path": "s3://ons-aws-prod-opendata/dataset/balanco_dessem_detalhe/"
+    },
+    {
+      "path": "s3://ons-aws-prod-opendata/dataset/balanco_energia_subsistema_ho/"
+    }
+  ],
+  "data_points": [
+    {
+      "labels": ["Hidrelétrica", "Termelétrica", "Eólica", "Solar", "Outras"],
+      "values": [109000, 45000, 18000, 8000, 5000],
+      "title": "Capacidade de Geração por Fonte (MW)"
+    }
+  ]
+}

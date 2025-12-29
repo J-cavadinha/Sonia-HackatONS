@@ -1,0 +1,72 @@
+{
+  "dataset_slug": "ofertapreco-importacao-se",
+  "source_pdf": "dataset/ofertapreco-importacao-se/DicionarioDados_OfertasPrecoImportacao.pdf",
+  "title": "DADOS DE OFERTAS DE PREÇO PARA IMPORTAÇÃO",
+  "description": "Preços declarados semanalmente pelos Agentes comercializadores para oferta de energia da Argentina e Uruguai para o Sistema Interligado Nacional.",
+  "fields": [
+    {
+      "label": "Nome do país exportador de energia para o Brasil",
+      "code": "nom_pais",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Nome do Agente comercializador responsável pela energia",
+      "code": "nom_agente",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Bloco de energia",
+      "code": "nom_bloco",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "70 POSIÇÕES",
+      "nullable": false,
+      "max_length": 70
+    },
+    {
+      "label": "Data inicial da validade do preço ofertado",
+      "code": "dat_iniciovalidade",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Data final da validade do preço ofertado",
+      "code": "dat_fimvalidade",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Preço da energia, conforme oferta realizada pelo agente comercializador no PMO em R$/MWh",
+      "code": "val_preco",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "09-03-2022",
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": "13-07-2023",
+      "notes": "Alteração do layout – orientação do arquivo de Dicionário de Dados"
+    }
+  ]
+}

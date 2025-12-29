@@ -1,0 +1,60 @@
+{
+  "dataset_slug": "energia_vertida_turbinavel_ho",
+  "source_pdf": "dataset/energia_vertida_turbinavel_ho/DicionarioDados_EnergiaVertidaTurbinavel.pdf",
+  "title": "DADOS DE ENERGIA VERTIDA TURBINÁVEL",
+  "description": "Dados de energia vertida turbinável consolidados pelo ONS por reservatório em periodicidade horária.",
+  "fields": [
+    {
+      "label": "Identificador do subsistema",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Nome do subsistema",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Nome da bacia hidroenergética",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Nome do rio",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Nome do Agente",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Nome do reservatório",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Código da usina nos modelos de otimização",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Instante Nota: A Hora Início (00:00) representa o intervalo entre 00:00 até 00:59:59",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Valor da Geração, em MWmed",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Valor de disponibilidade, em MWmed",
+      "data_type": "STRING"
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "11-07-2022",
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "2.0",
+      "date": "06-06-2024",
+      "notes": "Adição de informações no campo de Data."
+    }
+  ]
+}

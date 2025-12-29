@@ -1,0 +1,59 @@
+{
+  "dataset_slug": "ind_qualid_dfd_meano",
+  "source_pdf": "dataset/ind_qualid_dfd_meano/DicionarioDados_Ind_Qualidade_DFD_MesAno.pdf",
+  "title": "DADOS DOS INDICADORES DE QUALIDADE DE ENERGIA DA REDE BÁSICA: DFD – DESEMPENHO DA FREQUÊNCIA EM",
+  "description": "Indicador de Desempenho da Frequência em Distúrbios – DFD, estabelecido conforme Submódulo 9.7 dos Procedimentos de Rede, apresentado nas periodicidades mensal e anual.",
+  "fields": [
+    {
+      "label": "Periodicidade do indicador Os valores possíveis são: • 12: janela dos últimos 12 meses • ME: Mensal",
+      "code": "id_periodicidade",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Mês do indicador",
+      "code": "din_referencia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Identificador da faixa de frequência",
+      "code": "id_faixafrequencia",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Faixa de frequência",
+      "code": "nom_faixafrequencia",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "50 POSIÇÕES",
+      "nullable": false,
+      "max_length": 50
+    },
+    {
+      "label": "Valor do indicador, representando o tempo, em segundos, em que a frequência permaneceu na faixa correspondente",
+      "code": "val_dfd",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "26-02-2025",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

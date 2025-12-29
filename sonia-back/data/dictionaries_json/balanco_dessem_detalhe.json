@@ -1,0 +1,122 @@
+{
+  "dataset_slug": "balanco_dessem_detalhe",
+  "source_pdf": "dataset/balanco_dessem_detalhe/DicionarioDados_Balanco_Dessem_Detalhe.pdf",
+  "title": "DADOS DO BALANÇO DE ENERGIA DO DESSEM - DETALHADO",
+  "description": "Informação da programação eletro energética, resultante do modelo DESSEM no formato detalhado, da demanda de energia e geração por fontes previstas para um dia de referência em periodicidade semi-horária no subsistema..",
+  "fields": [
+    {
+      "label": "Data de Referência da Programação Diária",
+      "code": "din_programacaodia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "DD/MM/AAAA",
+      "nullable": false
+    },
+    {
+      "label": "Número do Patamar",
+      "code": "num_patamar",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Código do Subsistema",
+      "code": "cod_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Valor da Demanda, em (MW)",
+      "code": "val_demanda",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Geração de usina Hidráulica, em (MW)",
+      "code": "val_geracao_hidraulica",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Geração de usina PCH, em (MW)",
+      "code": "val_ger_pch",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Geração de usina Térmica, em (MW)",
+      "code": "val_geracao_termica",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Geração de usina PCT, em (MW)",
+      "code": "val_ger_pct",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Geração de usina Eólica, em (MW)",
+      "code": "val_ger_eolica",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Geração de usina Fotovoltaica, em (MW)",
+      "code": "val_ger_fotovoltaica",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Geração de MMGD, em (MW)",
+      "code": "val_ger_mmgd",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de Consumo de usina Elevatória, em (MW)",
+      "code": "val_cons_elevatoria",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "22-05-2025",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

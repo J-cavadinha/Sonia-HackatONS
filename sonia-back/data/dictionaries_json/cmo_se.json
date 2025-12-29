@@ -1,0 +1,82 @@
+{
+  "dataset_slug": "cmo_se",
+  "source_pdf": "dataset/cmo_se/DicionarioDados_Cmo_Semanal.pdf",
+  "title": "DADOS DO CMO SEMANAL (RESULTADO DO MODELO DECOMP)",
+  "description": "Valores do custo, por unidade de energia produzida, para atender ao incremento de uma unidade de carga no SIN, chamado de Custo Marginal de Operação – CMO. Valores para cada semana operativa por subsistema, e por patamar de carga, além da média semanal, estimados pelo modelo Decomp.",
+  "fields": [
+    {
+      "label": "Código do Subsistema",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Nome do Subsistema",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Data de referência da Semana Operativa",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "CMO Médio Semanal, em R$/MW",
+      "code": "val_cmomediasemanal",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "CMO no patamar de carga leve, em R$/MWh",
+      "code": "val_cmoleve",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "CMO no patamar de carga média, em R$/MWh",
+      "code": "val_cmomedia",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "CMO no patamar de carga pesada, em R$/MWh",
+      "code": "val_cmopesada",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "26-08-2022",
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": "02-05-2023",
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem"
+    }
+  ]
+}

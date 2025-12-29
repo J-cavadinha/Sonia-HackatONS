@@ -1,0 +1,75 @@
+{
+  "dataset_slug": "ind_qualid_dfd_evento",
+  "source_pdf": "dataset/ind_qualid_dfd_evento/DicionarioDados_Ind_Qualidade_DFD_Eventos.pdf",
+  "title": "DADOS DOS INDICADORES DE QUALIDADE DE ENERGIA DA REDE BÁSICA: DFD – DESEMPENHO DA FREQUÊNCIA EM",
+  "description": "Indicador de Desempenho da Frequência em Distúrbios – DFD, estabelecido conforme Submódulo 9.7 dos Procedimentos de Rede, apresentado por evento.",
+  "fields": [
+    {
+      "label": "Instante de início do evento",
+      "code": "din_referencia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Instante de entrada da frequência na faixa",
+      "code": "din_iniciodesviofreq",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Instante de saída da frequência da faixa",
+      "code": "din_fimdesviofreq",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Identificador da faixa de frequência",
+      "code": "id_faixafrequencia",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Faixa de frequência",
+      "code": "nom_faixafrequencia",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "50 POSIÇÕES",
+      "nullable": false,
+      "max_length": 50
+    },
+    {
+      "label": "Valor do indicador, representando o tempo, em segundos, em que a frequência permaneceu na faixa correspondente",
+      "code": "val_dfd",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor mínimo/máximo atingido pela frequência no período, em Hz",
+      "code": "val_freqmaxmin",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "26-02-2025",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

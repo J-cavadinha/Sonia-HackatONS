@@ -1,0 +1,76 @@
+{
+  "dataset_slug": "ena_ree_di",
+  "source_pdf": "dataset/ena_ree_di/DicionarioDados_EnaPorResEquivalente.pdf",
+  "title": "ENA DIÁRIO POR REE - RESERVATÓRIO EQUIVALENTE DE ENERGIA (ENA MÁXIMA, ENA NO DIA EM MWMÊS, ENA NO DIA EM",
+  "description": "Dados de Energia Natural Afluente (ENA) em periodicidade diária por Reservatório Equivalente de Energia (REE). A ENA Bruta representa a energia produzível pelo reservatório e é calculada pelo produto das vazões naturais aos reservatórios com as produtividades a 65% dos volumes úteis. A ENA Armazenável considera as vazões naturais descontadas das vazões vertidas nos reservatórios.",
+  "fields": [
+    {
+      "label": "Nome do Reservatório Equivalente",
+      "code": "nom_ree",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 20
+    },
+    {
+      "label": "Dia observado da medida",
+      "code": "ena_data",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de ENA bruta na unidade de medida MWmês",
+      "code": "ena_bruta_ree_mwmed",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de ENA bruta percentual da média de longo termo-MLT (%)",
+      "code": "ena_bruta_ree_percentualmlt",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "code": "ena_armazenavel_ree_mwmed",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor de ENA armazenável percentual da média de longo termo-MLT (%)",
+      "code": "ena_armazenavel_ree_percentualmlt",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": true
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem de qualidade de"
+    }
+  ]
+}

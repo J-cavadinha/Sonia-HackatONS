@@ -1,0 +1,73 @@
+{
+  "dataset_slug": "subestacao",
+  "source_pdf": "dataset/subestacao/DicionarioDados_Subestacao_Rede_de_Operacao.pdf",
+  "title": "DADOS CADASTRAIS DE SUBESTAÇÕES DA REDE DE OPERAÇÃO",
+  "description": "Dados cadastrais das subestações em operação existentes na Rede de Operação (Rede Básica + Rede Complementar) com tensão base maior ou igual a 69 kV.",
+  "fields": [
+    {
+      "label": "Subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO"
+    },
+    {
+      "label": "Nome do subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO"
+    },
+    {
+      "label": "Sigla do estado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO"
+    },
+    {
+      "label": "Nome do estado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO"
+    },
+    {
+      "label": "Nome do agente principal da subestação",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO"
+    },
+    {
+      "label": "Identificador da subestação",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO"
+    },
+    {
+      "label": "Nome da subestação",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO"
+    },
+    {
+      "label": "Tensão nominal, em kV",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT"
+    },
+    {
+      "label": "Identificador da estação",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO"
+    },
+    {
+      "label": "Número do Barramento",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO"
+    },
+    {
+      "label": "Latitude da Subestação",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Longitude da Subestação",
+      "data_type": "STRING"
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "04-07-2025",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

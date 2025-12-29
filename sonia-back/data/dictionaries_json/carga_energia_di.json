@@ -1,0 +1,60 @@
+{
+  "dataset_slug": "carga_energia_di",
+  "source_pdf": "dataset/carga_energia_di/DicionarioDados_Carga_Energia_Diaria.pdf",
+  "title": "DADOS DE CARGA DE ENERGIA DIÁRIA",
+  "description": "Dados de carga por subsistema numa data de referência em base diária.",
+  "fields": [
+    {
+      "label": "Código do Subsistema",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Nome do Subsistema",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "60 POSIÇÕES",
+      "nullable": false,
+      "max_length": 60
+    },
+    {
+      "label": "Data de referência",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "HH:MM",
+      "nullable": false
+    },
+    {
+      "label": "Valor da Carga de Energia, em MWmed",
+      "code": "val_cargaenergiamwmed",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem de qualidade de"
+    },
+    {
+      "version": "1.2",
+      "date": null,
+      "notes": "Alteração do tamanho da coluna “nom_subsistema” de 20 para 60 catacteres; e alteração do nome do Dicionário de Dados."
+    }
+  ]
+}

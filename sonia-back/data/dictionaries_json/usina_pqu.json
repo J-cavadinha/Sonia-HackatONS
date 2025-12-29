@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "usina_pqu",
+  "source_pdf": "dataset/usina_pqu/DicionarioDados_Usina_PequenaUsina.pdf",
+  "title": "DADOS DO RELACIONAMENTO ENTRE GRUPOS DE PEQUENAS USINAS E USINAS",
+  "description": "Relação das usinas Tipo III que compõem os Grupos de Pequenas Usinas.",
+  "fields": [
+    {
+      "label": "Identificador do subsistema do conjunto de usinas",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Nome do subsistema do conjunto de usinas",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "60 POSIÇÕES",
+      "nullable": false,
+      "max_length": 60
+    },
+    {
+      "label": "Identificador do estado da subestação coletora do conjunto de usinas",
+      "code": "estad_id",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Nome do estado da subestação coletora do conjunto de usinas",
+      "code": "nom_estado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "60 POSIÇÕES",
+      "nullable": false,
+      "max_length": 60
+    },
+    {
+      "label": "Tipo da usina",
+      "code": "id_tipousina",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Identificador do grupo de pequenas usinas no ONS",
+      "code": "id_ons_pequenasusinas",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "12 POSIÇÕES",
+      "nullable": false,
+      "max_length": 12
+    },
+    {
+      "label": "Identificador da usina no ONS",
+      "code": "id_ons_usina",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "6 POSIÇÕES",
+      "nullable": false,
+      "max_length": 6
+    },
+    {
+      "label": "Nome do grupo de pequenas usinas",
+      "code": "nom_pequenasusinas",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "50 POSIÇÕES",
+      "nullable": false,
+      "max_length": 50
+    },
+    {
+      "label": "Nome da usina",
+      "code": "nom_usina",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "50 POSIÇÕES",
+      "nullable": false,
+      "max_length": 50
+    },
+    {
+      "label": "Código Único do Empreendimento de Geração (CEG), estabelecido pela ANEEL",
+      "code": "ceg",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "19-06-2023",
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": "03-04-2025",
+      "notes": "Alteração do campo de “descrição“ das colunas id_ons_usina"
+    },
+    {
+      "version": "1.2",
+      "date": "13-05-2025",
+      "notes": "Alteração do conteúdo do campo “nom_estado” para remover acentuação e evitar problemas de padrão de"
+    }
+  ]
+}

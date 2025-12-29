@@ -1,0 +1,55 @@
+{
+  "dataset_slug": "curva-carga-ho",
+  "source_pdf": "dataset/curva-carga-ho/DicionarioDados_CurvaCarga.pdf",
+  "title": "DADOS DE CURVA DE CARGA HORÁRIA",
+  "description": "Dados de curva de carga horária, que representam o perfil de consumo de energia elétrica com discretização horária.",
+  "fields": [
+    {
+      "label": "Código do Subsistema",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Nome do Subsistema",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Data de referência",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Valor da Carga de Energia, em MWmed",
+      "code": "val_cargaenergiahomwmed",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem de qualidade de"
+    }
+  ]
+}

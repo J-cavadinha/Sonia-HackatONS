@@ -1,0 +1,115 @@
+{
+  "dataset_slug": "ind_confiarb_robustez",
+  "source_pdf": "dataset/ind_confiarb_robustez/DicionarioDados_Ind_Confiabilidade_RB_Robustez.pdf",
+  "title": "DADOS DOS INDICADORES DE CONFIABILIDADE DA REDE BÁSICA: ROBUSTEZ – RMAL, RMCS, RRB E RRBCSS",
+  "description": "Indicadores de Robustez da Malha Sistêmica (RMAL), Robustez da Malha Sistêmica para Contingências Simples (RMCS), Robustez da Rede Básica (RRB), Robustez da Rede Básica para Contingências Simples (RRBCS), estabelecidos conforme Submódulo 9.1 dos Procedimentos de Rede. Os indicadores são apresentados nas agregações SIN, Subsistema, Região geográfica e Estado, nas periodicidades mensal e anual.",
+  "fields": [
+    {
+      "label": "Sigla do Indicadores",
+      "code": "cod_indicador",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Tipo de agregação do indicador. Os valores possíveis são: SIN, Subsistema, Região geográfica ou Estado.",
+      "code": "dsc_agregacao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "200 POSIÇÕES",
+      "nullable": false,
+      "max_length": 200
+    },
+    {
+      "label": "Sigla da visão do indicador. Observação: Conforme o Tipo de Agregação selecionado, são apresentadas as siglas correspondentes a estes.",
+      "code": "cod_caracteristica",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "100 POSIÇÕES",
+      "nullable": false,
+      "max_length": 100
+    },
+    {
+      "label": "Descrição da visão do indicador. Observação: Conforme o Tipo de Agregação selecionado, são apresentados os descritivos correspondentes a estes.",
+      "code": "dsc_caracteristica",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "200 POSIÇÕES",
+      "nullable": false,
+      "max_length": 200
+    },
+    {
+      "label": "Periodicidade do indicador. Os valores possíveis são: AN: Anual, ME: Mensal.",
+      "code": "id_periodicidade",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Mês ou ano do indicador",
+      "code": "din_referencia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Valor do indicador, em %",
+      "code": "val_indicador",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "num_perturbacoes",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Quantidade de perturbações com qualquer corte de carga no período",
+      "code": "num_perturbacoescortecarga",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Quantidade de perturbações com corte de carga menor que 50 MW no período",
+      "code": "num_perturbacoescortecarga_0a50mw",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Quantidade de perturbações com corte de carga maior ou igual a 50 MW e menor que 100 MW no período",
+      "code": "num_perturbacoescortecarga_50a100mw",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Quantidade de perturbações com corte de carga maior ou igual a 100 MW no período",
+      "code": "num_perturbacoescortecarga_maior100mw",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": []
+}

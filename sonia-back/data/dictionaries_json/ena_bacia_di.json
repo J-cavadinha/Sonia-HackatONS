@@ -1,0 +1,73 @@
+{
+  "dataset_slug": "ena_bacia_di",
+  "source_pdf": "dataset/ena_bacia_di/DicionarioDados_EnaPorBacia.pdf",
+  "title": "DADOS DE ENA DIÁRIO POR BACIA (ENA MÁXIMA, ENA NO DIA EM MWMÊS, ENA NO DIA EM %)",
+  "description": "Dados de Energia Natural Afluente (ENA) em periodicidade diária por Bacia. A ENA Bruta representa a energia produzível pelo reservatório e é calculada pelo produto das vazões naturais aos reservatórios com as produtividades a 65% dos volumes úteis. A ENA Armazenável considera as vazões naturais descontadas das vazões vertidas nos reservatórios.",
+  "fields": [
+    {
+      "label": "Nome curto da Bacia Hidro- Energética",
+      "code": "nom_bacia",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "15 POSIÇÕES",
+      "nullable": false,
+      "max_length": 15
+    },
+    {
+      "label": "Dia observado da medida",
+      "code": "ena_data",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Valor de ENA bruta por Bacia na unidade de medida MWmês.",
+      "code": "ena_bruta_bacia_mwmed",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor de ENA bruta por Bacia em percentual por média de longo termo- MLT (%)",
+      "code": "ena_bruta_bacia_percentualmlt",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor de ENA armazenável por Bacia na unidade de medida MWmês",
+      "code": "ena_armazenavel_bacia_mwmed",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor de ENA armazenável por Bacia em percentual por média de longo termo-MLT (%)",
+      "code": "ena_armazenavel_bacia_percentualmlt",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem de qualidade de"
+    }
+  ]
+}

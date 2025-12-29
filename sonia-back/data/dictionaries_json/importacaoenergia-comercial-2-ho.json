@@ -1,0 +1,105 @@
+{
+  "dataset_slug": "importacaoenergia-comercial-2-ho",
+  "source_pdf": "dataset/importacaoenergia-comercial-2-ho/DicionarioDados_Importacao_Energia_Comercial.pdf",
+  "title": "DADOS DE IMPORTAÇÃO DE ENERGIA NA MODALIDADE COMERCIAL POR BLOCO",
+  "description": "Dados de importação de energia na modalidade comercial em base horária por bloco, em MWmed, e o preço correspondente ofertado pelo agente comercializador no PMO. Observação: Este modelo de importação foi estabelecido pela Portaria MME nº 15/2018, com vigência a partir de 01/01/2019.",
+  "fields": [
+    {
+      "label": "Nome do país exportador de energia para o Brasil",
+      "code": "nom_pais",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Nome do Agente comercializador responsável pela energia",
+      "code": "nom_agente",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Nome do Bloco de energia",
+      "code": "nom_bloco",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "70 POSIÇÕES",
+      "nullable": false,
+      "max_length": 70
+    },
+    {
+      "label": "Código do Bloco de energia",
+      "code": "cod_bloco",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Data de referência",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Importação programada em base horária, em MWh",
+      "code": "val_importacaoprogramada",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Importação despachada em base horária, em MWh. O valor despachado",
+      "code": "val_importacaodespachada",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "corresponde ao programado acrescido de eventuais alterações determinadas em tempo real. Importação verificada em base horária em MWh",
+      "code": "val_importacaoverificada",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Preço da energia, conforme oferta realizada pelo agente comercializador no PMO em R$/MWh. Se não houver valores neste campo, significa que não houve uma oferta de preço para este bloco por parte do Agente comercializador.",
+      "code": "val_preco",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": false,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "11-05-2022",
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": "13-09-2022",
+      "notes": "-Adição de uma coluna NOVA ao conjunto de dados chamada “val_importacaodespachada”,"
+    },
+    {
+      "version": "1.2",
+      "date": "26-09-2024",
+      "notes": "-Adição de uma coluna NOVA ao conjunto de dados chamada “cod_bloco”"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "dataset_slug": "intercambio_internacional_ho",
+  "source_pdf": "dataset/intercambio_internacional_ho/DicionarioDados_Intercambio_Internacional.pdf",
+  "title": "DADOS DE INTERCÂMBIO DO SIN COM OUTROS PAÍSES",
+  "description": "Dados de intercâmbio entre o Sistema Interligado Nacional-SIN e outros países em base horária, em MWmed. As grandezas representam a soma das medidas de fluxo de potência ativa nas conversoras de frequência de fronteira entre os dois países. O intercâmbio com a Argentina pode ser realizado pelas conversoras de Garabi I, Garabi II e Uruguaiana. O intercâmbio com o Uruguai pode ser realizado pelas conversoras de Melo e Rivera. O intercâmbio com o Paraguai pode ser realizado pela conversora de Acaray.",
+  "fields": [
+    {
+      "label": "Data/hora (início do período de agregação)",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Nome do país de destino da energia",
+      "code": "nom_paisdestino",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Intercâmbio verificado em base horária, representando a soma das medidas de fluxo de potência ativa nas conversoras de frequência de fronteira entre os dois países medido, em MWmed. Dados positivos indicam exportação de energia do Brasil para outros países; dados negativos indicam importação de energia do Brasil de outros países.",
+      "code": "val_intercambiomwmed",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem de qualidade de"
+    }
+  ]
+}

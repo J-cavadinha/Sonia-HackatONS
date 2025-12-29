@@ -1,0 +1,177 @@
+{
+  "dataset_slug": "equipamento_controle_reativo",
+  "source_pdf": "dataset/equipamento_controle_reativo/DicionarioDados_Equipamento_Controle_Reativo.pdf",
+  "title": "DADOS DO EQUIPAMENTOS DE CONTROLE DE REATIVOS",
+  "description": "Dados de potência nominal de reatores, capacitores shunt, compensadores síncronos e compensadores estáticos da Rede de Operação, bem como seus Agentes proprietários.",
+  "fields": [
+    {
+      "label": "Código do Subsistema",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 2
+    },
+    {
+      "label": "Nome da Subsistema",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 20
+    },
+    {
+      "label": "Estado onde se localiza o equipamento",
+      "code": "id_estado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 2
+    },
+    {
+      "label": "Nome do estado onde se localiza o equipamento",
+      "code": "nom_estado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 30
+    },
+    {
+      "label": "Nome da subestação onde se localiza o equipamento",
+      "code": "nom_subestacao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 20
+    },
+    {
+      "label": "Nome do Agente proprietário do equipamento",
+      "code": "nom_agente_proprietario",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 30
+    },
+    {
+      "label": "Tipo de rede do equipamento",
+      "code": "nom_tipoderede",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "15 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 15
+    },
+    {
+      "label": "Tipo do equipamento",
+      "code": "nom_tipoequipamento",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "45 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 45
+    },
+    {
+      "label": "Nome do Equipamento",
+      "code": "nom_equipamento",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "72 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 72
+    },
+    {
+      "label": "Potência reativa nominal do equipamento, em Mvar. Campo preenchido apenas para reatores e capacitores shunt.",
+      "code": "val_potreativanominal_mvar",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Limite inferior de absorção de potência reativa. Campo preenchido apenas para compensadores síncronos e estáticos.",
+      "code": "val_limiteinferior_mvar",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Limite superior de fornecimento de potência reativa. Campo preenchido apenas para compensadores síncronos e estáticos.",
+      "code": "val_limitesuperior_mvar",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Data de entrada em operação do equipamento.",
+      "code": "dat_entradaoperacao",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Data de desativação do equipamento.",
+      "code": "dat_desativacao",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": true,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Código do Equipamento",
+      "code": "cod_equipamento",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 20
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem de qualidade de"
+    }
+  ]
+}

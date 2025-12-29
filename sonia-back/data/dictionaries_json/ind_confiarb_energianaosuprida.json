@@ -1,0 +1,62 @@
+{
+  "dataset_slug": "ind_confiarb_energianaosuprida",
+  "source_pdf": "dataset/ind_confiarb_energianaosuprida/DicionarioDados_Ind_Confiabilidade_Energia_NaoSuprida.pdf",
+  "title": "DADOS DOS INDICADORES DE CONFIABILIDADE DA REDE BÁSICA: ENS – ENERGIA NÃO SUPRIDA",
+  "description": "Indicador de Energia Não Suprida (ENS), estabelecido conforme Submódulo 9.1 dos Procedimentos de Rede. Os indicadores são apresentados nas agregações SIN, Subsistema, Região geográfica e Estado, nas periodicidades mensal e anual.",
+  "fields": [
+    {
+      "label": "Tipo de agregação do indicador. Os valores possíveis são: SIN, Subsistema, Região geográfica ou Estado.",
+      "code": "dsc_agregacao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "200 POSIÇÕES",
+      "nullable": false,
+      "max_length": 200
+    },
+    {
+      "label": "Sigla da visão do indicador. Observação: Conforme o Tipo de Agregação selecionado, são apresentadas as siglas correspondentes a estes.",
+      "code": "cod_caracteristica",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "100 POSIÇÕES",
+      "nullable": false,
+      "max_length": 100
+    },
+    {
+      "label": "Descrição da visão do indicador. Observação: Conforme o Tipo de Agregação selecionado, são apresentados os descritivos correspondentes a estes.",
+      "code": "dsc_caracteristica",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "200 POSIÇÕES",
+      "nullable": false,
+      "max_length": 200
+    },
+    {
+      "label": "Periodicidade do indicador Os valores possíveis são: AN: Anual, ME: Mensal.",
+      "code": "id_periodicidade",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Mês ou Ano do indicador",
+      "code": "din_referencia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Valor do indicador ENS para o mês ou ano, em pu.",
+      "code": "val_ens",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": []
+}

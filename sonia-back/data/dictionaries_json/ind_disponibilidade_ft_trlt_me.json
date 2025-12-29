@@ -1,0 +1,35 @@
+{
+  "dataset_slug": "ind_disponibilidade_ft_trlt_me",
+  "source_pdf": "dataset/ind_disponibilidade_ft_trlt_me/DicionarioDados_Ind_DisponibilidadeTransmissao_FT_TRLT.pdf",
+  "title": "DADOS DE INDICADORES DE DISPONIBILIDADE DE FUNÇÃO TRANSMISSÃO – LINHAS DE TRANSMISSÃO E",
+  "description": "Indicadores de Disponibilidade das Funções Transmissão (DISP), Indisponibilidade Programada das Funções Transmissão (INDISPPF) e Indisponibilidade Forçada das Funções Transmissão (INDISPFF), agregados por função transmissão e nível de tensão para transformadores e linha de transmissão, em base mensal, conforme estabelecido no Submódulo 9.2 dos Procedimentos de Rede.",
+  "fields": [
+    {
+      "label": "Código da Característica do Indicador",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Data de Referência",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Valor do Indicadores de Disponibilidade das Funções Transmissão (DISP)",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Indisponibilidade Programada das Funções Transmissão (INDISPPF)",
+      "data_type": "STRING"
+    },
+    {
+      "label": "(INDISPPF) e Indisponibilidade Forçada das Funções Transmissão (INDISPFF), agregados por função transmissão e nível de tensão para transformadores e linha de transmissão, em base mensal, conforme estabelecido no Submódulo 9.2 dos Procedimentos de Rede.",
+      "data_type": "STRING"
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

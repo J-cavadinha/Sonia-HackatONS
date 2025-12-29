@@ -1,0 +1,70 @@
+{
+  "dataset_slug": "programacao_x_previsao",
+  "source_pdf": "dataset/programacao_x_previsao/DicionarioDados_Programado_x_Previsao_EolicaSolar.pdf",
+  "title": "DADOS DE VALORES DA PREVISÃO VERSUS PROGRAMADO - EÓLICAS E SOLARES",
+  "description": "Valores da Previsão versus Valores Programado - Eólicas e Solares.",
+  "fields": [
+    {
+      "label": "Data de Referência da Programação Diária",
+      "code": "dat_programacao",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número do Patamar",
+      "code": "num_patamar",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Código da Usina no PDP",
+      "code": "cod_usinapdp",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "100 POSIÇÕES",
+      "nullable": false,
+      "max_length": 100
+    },
+    {
+      "label": "Nome da Usina",
+      "code": "nom_usinapdp",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "250 POSIÇÕES",
+      "nullable": false,
+      "max_length": 250
+    },
+    {
+      "label": "Valor Previsto em MW",
+      "code": "val_previsao",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor Programado em MW",
+      "code": "val_programado",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "10-09-2024",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

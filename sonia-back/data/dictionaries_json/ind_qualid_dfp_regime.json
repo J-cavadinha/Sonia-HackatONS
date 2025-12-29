@@ -1,0 +1,104 @@
+{
+  "dataset_slug": "ind_qualid_dfp_regime",
+  "source_pdf": "dataset/ind_qualid_dfp_regime/DicionarioDados_Ind_Qualidade_DFP_RegimePermanente.pdf",
+  "title": "DADOS DOS INDICADORES DE QUALIDADE DE ENERGIA DA REDE BÁSICA: DFP – DESEMPENHO DA FREQUÊNCIA EM",
+  "description": "Indicador de Desempenho da Frequência em Regime Permanente (DFP), estabelecido conforme Submódulo 9.7 dos Procedimentos de Rede. O indicador é apresentado nas periodicidades diária, mensal e anual.",
+  "fields": [
+    {
+      "label": "Periodicidade do indicador Os valores possíveis são: • AN: Acumulado no ano até o mês • ME: Mensal • DI: Diária",
+      "code": "id_periodicidade",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Dia ou mês do indicador",
+      "code": "din_referencia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Número de desvios por sobrefrequência em regime permanente, em minutos",
+      "code": "num_desvio_perm_sobre",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número de desvios por subfrequência em regime permanente, em minutos",
+      "code": "num_desvio_perm_sub",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número de desvios por sobrefrequência em distúrbio, em minutos",
+      "code": "num_desvio_dist_sobre",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número de desvios por subfrequência em distúrbio, em minutos",
+      "code": "num_desvio_dist_sub",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número de minutos no período",
+      "code": "num_minutos",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número total de violações em distúrbio, em minutos",
+      "code": "num_violadodis",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número total de violações em regime permanente, em minutos",
+      "code": "num_violadoperm",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor do indicador, em %",
+      "code": "val_dfp",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "26-02-2025",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

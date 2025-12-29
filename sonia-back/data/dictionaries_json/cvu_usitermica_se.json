@@ -1,0 +1,113 @@
+{
+  "dataset_slug": "cvu_usitermica_se",
+  "source_pdf": "dataset/cvu_usitermica_se/DicionarioDados_CVU_UsinaTermica.pdf",
+  "title": "DADOS DO CVU DE USINA TERMICA",
+  "description": "Custo Variável Unitário (CVU) de usinas térmicas considerado no Programa Mensal da Operação, conforme utilizado na execução do modelo DECOMP.",
+  "fields": [
+    {
+      "label": "Data de Início da Semana Operativa",
+      "code": "dat_iniciosemana",
+      "data_type": "DATE",
+      "raw_tipo": "DATE",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Data de Fim da Semana Operativa",
+      "code": "dat_fimsemana",
+      "data_type": "DATE",
+      "raw_tipo": "DATE",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Ano de Referência do PMO",
+      "code": "ano_referencia",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Mês de Referência do PMO",
+      "code": "mes_referencia",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número da Revisão PMO",
+      "code": "num_revisao",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Nome do Estudo da Semana Operativa",
+      "code": "nom_semanaoperativa",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "150 POSIÇÕES",
+      "nullable": false,
+      "max_length": 150
+    },
+    {
+      "label": "Código da usina nos modelos de planejamento",
+      "code": "cod_modelos",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Código do Subsistema",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Nome do Subsistema",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Nome da Usina",
+      "code": "nom_usina",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "150 POSIÇÕES",
+      "nullable": false,
+      "max_length": 150
+    },
+    {
+      "label": "Valor do Custo Variável Unitário – CVU, em R$/MWh",
+      "code": "val_cvu",
+      "data_type": "FLOAT",
+      "raw_tipo": "DECIMAL",
+      "format": "18, 2",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "02-05-2023",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

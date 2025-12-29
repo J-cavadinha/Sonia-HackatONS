@@ -1,0 +1,65 @@
+{
+  "dataset_slug": "intercambio_nacional_ho",
+  "source_pdf": "dataset/intercambio_nacional_ho/DicionarioDados_Intercambio_Nacional.pdf",
+  "title": "DADOS DE INTERCÂMBIOS ENTRE SUBSISTEMAS",
+  "description": "Dados de intercâmbio entre subsistemas em base horária, em MWmed. As grandezas representam a soma das medidas de fluxo de potência ativa nas linhas de transmissão de fronteira entre os subsistemas. Observações: (1) A relação de linhas de transmissão de fronteira pode ser encontrada no produto \"Relatório Quadrimestral de Limites de Intercâmbio para o Modelo Newave\", disponível Portal SINtegre - ONS. (2) O intercâmbio do subsistema Sul com os países vizinhos não consta nesta consulta e pode ser obtido nos dados de intercâmbio do SIN.",
+  "fields": [
+    {
+      "label": "Data/hora (início do período de agregação)",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD"
+    },
+    {
+      "label": "Código do Subsistema de Origem",
+      "code": "id_subsistema_origem",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "max_length": 3
+    },
+    {
+      "label": "Nome do Subsistema de Origem",
+      "code": "nom_subsistema_origem",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "max_length": 20
+    },
+    {
+      "label": "Código do Subsistema de Destino",
+      "code": "id_subsistema_destino",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "max_length": 3
+    },
+    {
+      "label": "Nome do Subsistema de Destino",
+      "code": "nom_subsistema_destino",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "max_length": 20
+    },
+    {
+      "label": "Intercâmbio verificado em base horária, representando a soma das medidas de fluxo de potência ativa nas linhas de transmissão de fronteira entre os subsistemas em MWmed",
+      "code": "val_intercambiomwmed",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT"
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem de qualidade de"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "dataset_slug": "carga_verificada_tm",
+  "source_pdf": "dataset/carga_verificada_tm/DicionarioDados_Carga_Verificada.pdf",
+  "title": "DADOS DE CARGA VERIFICADA",
+  "description": "//ons-dl-prod-opendata-swagger.s3-website-us-east-1.amazonaws.com Dados de carga verificada na periodicidade semi-horária por área de carga e suas componentes de parcela supervisionada pelo ONS, parcela proveniente dos dados de medição (geração tipo I, IIA, IIB, IIC e intercâmbios), parcela proveniente do sistema de medição para faturamento da CCEE (geração tipo III), parcela atendida por micro e mini geração distribuída (MMGD), parcela atendida por redução de demanda, e os valores das consistências feitas para os modelos de previsão, quando ocorrerem. Os valores de área de carga podem assumir uma das siglas escritas na cor azul listados abaixo, e será um dos parâmetros da chamada da API, acrescida posteriormente do período a ser observado. Exemplo do trecho do endereço da API: ...cargaverificada?dat_inicio= YYYY-MM-DD&dat_fim= YYYY-MM-DD &cod_areacarga= cod_areacarga Lista de valores da Área de Carga (cod_areacarga) • Submercado: SECO (Sudeste/C. Oeste), N (Norte), NE (Nordeste), S (Sul) • Área Geoelétrica: BASE (Bahia/Sergipe), MA (Maranhão), DF (Distrito Federal), GO (Goiás), MS (Mato Grosso do Sul), AM (Amazonas), AP (Amapá), RR (Roraima), PI (Piauí), TON (Tocantins Norte), AC (Acre), RS (Rio Grande do Sul), SP (São Paulo), MT (Mato Grosso), TOCO (Tocantins), BAOE (Bahia Oeste), PBRN (Paraíba/Rio Grande do Norte), PR (Paraná), ES (Espírito Santo), MG (Minas Gerais), SC (Santa Catarina), CE (Ceará), RO (Rondônia), PA (Pará), RJ (Rio de Janeiro), ALPE (Alagoas/Pernambuco) • Perdas: PEN (Perdas Norte), PES (Perdas Sul), PENE (Perdas Nordeste), PESE (Perdas Sudeste)",
+  "fields": [
+    {
+      "label": "Código da Área de Carga",
+      "code": "cod_areacarga",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "ATÉ 4 POSIÇÕES"
+    },
+    {
+      "label": "Data de Referência",
+      "code": "dat_referencia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Data de referência do final do intervalo da semi-hora, no fuso horário UTC+0h",
+      "code": "din_referenciautc",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM",
+      "nullable": false
+    },
+    {
+      "label": "Valor da Carga Global em MWmed integralizada no final do intervalo da semi-hora",
+      "code": "val_cargaglobal",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor da Carga Global líquida de MMGD em MWmed integralizada no final do intervalo da semi-hora",
+      "code": "val_cargaglobalsmmg",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor da Carga atendida por MMGD em MWmed integralizada no final do intervalo da semi-hora",
+      "code": "val_cargammgd",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Carga Global consistida em MWmed integralizada no final do intervalo da semi-hora",
+      "code": "val_cargaglobalcons",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Consistência em MWmed integralizada no final do intervalo da semi-hora",
+      "code": "val_consistencia",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor da Carga supervisionada pelo ONS (geração tipo I, IIA, IIB, IIC e intercâmbios)em MWmed integralizada no final do intervalo da semi-hora",
+      "code": "val_cargasupervisionada",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor da Carga não supervisionada pelo ONS, proveniente do sistema de medição para faturamento da CCEE (geração tipo III) em MWmed integralizada no final do intervalo da semi-hora",
+      "code": "val_carganaosupervisionada",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Detalhamento da descrição da coluna ‘din_referenciautc’"
+    }
+  ]
+}

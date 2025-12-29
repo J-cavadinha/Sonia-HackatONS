@@ -1,0 +1,60 @@
+{
+  "dataset_slug": "cmo_tm",
+  "source_pdf": "dataset/cmo_tm/DicionarioDados_Cmo_Semi_Horario.pdf",
+  "title": "DADOS DO CMO SEMI-HORÁRIO (RESULTADO DO MODELO DESSEM)",
+  "description": "Valores do custo, por unidade de energia produzida, para atender ao incremento de uma unidade de carga no SIN, chamado de Custo Marginal de Operação – CMO. Este CMO é estimado pelo modelo DESSEM para cada barra do sistema em base semi-horária. O CMO do subsistema é obtido pelo média dos CMOs nas barras de cada subsistema, ponderados pelas respectivas cargas, considerando que um aumento de carga no subsistema se dá de maneira uniforme nas barras que a ele pertencem.",
+  "fields": [
+    {
+      "label": "Código do Subsistema",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Nome do Subsistema",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Data de referência",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Valor do CMO em R$/MWh",
+      "code": "val_cmo",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "26-08-2022",
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": "28-04-2023",
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem"
+    },
+    {
+      "version": "1.2",
+      "date": "02-05-2023",
+      "notes": "Alteração de conteúdo dos itens associados a qualidade de dados."
+    }
+  ]
+}

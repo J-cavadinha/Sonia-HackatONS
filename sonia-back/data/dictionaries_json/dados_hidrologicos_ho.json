@@ -1,0 +1,132 @@
+{
+  "dataset_slug": "dados_hidrologicos_ho",
+  "source_pdf": "dataset/dados_hidrologicos_ho/DicionarioDados_DadosHidrologicosHorarios.pdf",
+  "title": "DADOS HIDROLÓGICOS DE RESERVATÓRIOS – BASE HORÁRIA",
+  "description": "Dados hidrológicos de reservatórios consolidados pelo ONS em base horária.",
+  "fields": [
+    {
+      "label": "Identificador do subsistema",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Nome do subsistema",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Tipo do reservatório",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Nome da bacia em que o reservatório está localizado",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Identificador do reservatório",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Nome do reservatório",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Código da usina nos modelos de otimização",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Data Nota: A Hora Fim (01:00) representa o intervalo entre 00:00 até 00:59",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Nível montante, em metros",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Nível jusante, em metros",
+      "data_type": "STRING"
+    },
+    {
+      "label": "Valor do volume útil (%)",
+      "code": "val_volumeutil",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Vazão afluente em m3/s",
+      "code": "val_vazaoafluente",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Vazão da defluencia, em m3/s",
+      "code": "val_vazaodefluente",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Vazão turbinada, em m3/s",
+      "code": "val_vazaoturbinada",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Vazão vertida, em m3/s",
+      "code": "val_vazaovertida",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Vazão de outras estruturadas, em m3/s",
+      "code": "val_vazaooutrasestruturas",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Vazão transferida, em m3/s",
+      "code": "val_vazaotransferida",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Vazão vertida não turbinável, em m3/s",
+      "code": "val_vazaovertidanaoturbinavel",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "29-04-2024",
+      "notes": "Criação do dicionário de dados"
+    },
+    {
+      "version": "2.0",
+      "date": "06-06-2024",
+      "notes": "Adição de informações no campo de Data."
+    }
+  ]
+}

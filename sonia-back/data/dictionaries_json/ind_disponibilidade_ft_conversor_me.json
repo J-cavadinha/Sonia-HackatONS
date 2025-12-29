@@ -1,0 +1,41 @@
+{
+  "dataset_slug": "ind_disponibilidade_ft_conversor_me",
+  "source_pdf": "dataset/ind_disponibilidade_ft_conversor_me/DicionarioDados_Ind_DisponibilidadeTransmissao_FT_Conversor.pdf",
+  "title": "DADOS DE INDICADOR DE DISPONIBILIDADE DE FUNÇÃO TRANSMISSÃO – CONVERSORES",
+  "description": "Indicador de Disponibilidade das Funções Transmissão Conversora (DISPFTConv) agregados por nível de tensão, em base mensal.",
+  "fields": [
+    {
+      "label": "Código da Característica do Indicador",
+      "code": "cod_caracteristica",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "100 POSIÇÕES",
+      "nullable": false,
+      "max_length": 100
+    },
+    {
+      "label": "Data de Referência",
+      "code": "dat_referencia",
+      "data_type": "DATE",
+      "raw_tipo": "DATE",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Indicador de Disponibilidade das Funções Transmissão Conversora (DISPFTConv)",
+      "code": "val_dispftconv",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

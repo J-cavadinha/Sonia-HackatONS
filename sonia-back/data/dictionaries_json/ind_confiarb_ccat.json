@@ -1,0 +1,76 @@
+{
+  "dataset_slug": "ind_confiarb_ccat",
+  "source_pdf": "dataset/ind_confiarb_ccat/DicionarioDados_Ind_Confiabilidade_RB_CCAT .pdf",
+  "title": "DADOS DOS INDICADORES DE CONFIABILIDADE DA REDE BÁSICA: CCAT – CONTROLE DE CARREGAMENTO DE",
+  "description": "Indicador de Controle de Carregamento de Transformadores (CCAT), estabelecido conforme Submódulo 9.1 dos Procedimentos de Rede. O indicador é apresentado nas agregações SIN, Área de Controle e Agente, nas periodicidades mensal e anual.",
+  "fields": [
+    {
+      "label": "Tipo de agregação do indicador. Os valores possíveis são: SIN, COSR ou Agente.",
+      "code": "cod_tipoagregacao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "ATÉ 6 POSIÇÕES",
+      "nullable": false
+    },
+    {
+      "label": "Periodicidade do indicador. Os valores possíveis são: • AN :Acumulado no ano até o mês • ME: Mensal.",
+      "code": "id_periodicidade",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Nome da visão do indicador para a respectiva agregação (SIN, COSR ou Agente)",
+      "code": "nom_agregacao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "nullable": false,
+      "max_length": 30
+    },
+    {
+      "label": "Mês do indicador",
+      "code": "din_referencia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Número de transformadores em operação no período",
+      "code": "num_transformadoresoperacao",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Número de transformadores submetidos a sobrecarga no período",
+      "code": "num_transformadoresviolados",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor do indicador, em %",
+      "code": "val_ccat",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "26-02-2025",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

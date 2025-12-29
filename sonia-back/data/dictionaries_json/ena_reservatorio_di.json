@@ -1,0 +1,163 @@
+{
+  "dataset_slug": "ena_reservatorio_di",
+  "source_pdf": "dataset/ena_reservatorio_di/DicionarioDados_EnaPorReservatorio.pdf",
+  "title": "DADOS ENA DIÁRIO POR RESERVATÓRIO (ENA MÁXIMA, ENA NO DIA EM MWMÊS, ENA NO DIA EM %)",
+  "description": "Dados de Energia Natural Afluente (ENA) em periodicidade diária por Reservatório. A ENA Bruta representa a energia produzível pelo reservatório e é calculada pelo produto das vazões naturais aos reservatórios com as produtividades a 65% dos volumes úteis. A ENA Armazenável considera as vazões naturais descontadas das vazões vertidas nos reservatórios.",
+  "fields": [
+    {
+      "label": "Nome do Reservatório",
+      "code": "nom_reservatorio",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 20
+    },
+    {
+      "label": "Código do Reservatório nos modelos de planejamento",
+      "code": "cod_resplanejamento",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Tipo de Reservatório",
+      "code": "tip_reservatorio",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "40 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 40
+    },
+    {
+      "label": "Nome da Bacia",
+      "code": "nom_bacia",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "15 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 15
+    },
+    {
+      "label": "Nome do Reservatório Equivalente de Energia (REE)",
+      "code": "nom_ree",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": true,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 20
+    },
+    {
+      "label": "Código do Subsistema",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 2
+    },
+    {
+      "label": "Nome do Subsistema",
+      "code": "nom_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false,
+      "max_length": 20
+    },
+    {
+      "label": "Dia observado da medida",
+      "code": "ena_data",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de ENA bruta em MWmed",
+      "code": "ena_bruta_res_mwmed",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "ena_bruta_res_percentualmlt",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de ENA armazenável em MWmed",
+      "code": "ena_armazenavel_res_mwmed",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de ENA armazenável, em % da média de longo termo (MLT)",
+      "code": "ena_armazenavel_res_percentualmlt",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor de ENA por queda, em MWmed",
+      "code": "ena_queda_bruta",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor média de longo termo (MLT) de ENA, em MWmed",
+      "code": "mlt_ena",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    },
+    {
+      "version": "1.1",
+      "date": null,
+      "notes": "Evolução do Dicionário de Dados para incorporar informações que apoiem o processo de validação e checagem de qualidade de"
+    },
+    {
+      "version": "1.2",
+      "date": null,
+      "notes": "Adição 2 novas colunas: “ena_queda_bruta” e “mlt_ena”"
+    }
+  ]
+}

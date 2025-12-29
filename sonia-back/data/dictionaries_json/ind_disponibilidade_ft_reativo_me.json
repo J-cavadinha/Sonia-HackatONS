@@ -1,0 +1,41 @@
+{
+  "dataset_slug": "ind_disponibilidade_ft_reativo_me",
+  "source_pdf": "dataset/ind_disponibilidade_ft_reativo_me/DicionarioDados_Ind_DisponibilidadeTransmissao_FT_Reativo.pdf",
+  "title": "DADOS DE INDICADOR DE DISPONIBILIDADE DE FUNÇÃO TRANSMISSÃO – EQUIPAMENTOS DE CONTROLE DE REATIVO",
+  "description": "Indicador de Disponibilidade das Funções Transmissão (DISP) agregados por função transmissão e nível de tensão, em base mensal, conforme estabelecido no Submódulo 9.2 dos Procedimentos de Rede.",
+  "fields": [
+    {
+      "label": "Código da Característica do Indicador",
+      "code": "cod_caracteristica",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "100 POSIÇÕES",
+      "nullable": false,
+      "max_length": 100
+    },
+    {
+      "label": "Data de Referência",
+      "code": "dat_referencia",
+      "data_type": "DATE",
+      "raw_tipo": "DATE",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Indicador de Disponibilidade das Funções Transmissão - Equipamento de Controle de Reativo (DISP)",
+      "code": "val_disp",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

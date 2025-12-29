@@ -1,0 +1,60 @@
+{
+  "dataset_slug": "geracao_exportacao_internacional_ho",
+  "source_pdf": "dataset/geracao_exportacao_internacional_ho/DicionarioDados_Exportacao_Energia_Modalidade.pdf",
+  "title": "DADOS DE EXPORTAÇÃO DE ENERGIA POR MODALIDADE",
+  "description": "Histórico de dados de exportação de energia por modalidade discretizado em patamar horário, por conversora e montante de energia em MWh.",
+  "fields": [
+    {
+      "label": "Nome da Conversora",
+      "code": "nom_conversora",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "max_length": 20
+    },
+    {
+      "label": "Data/hora (início do período de agregação)",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD"
+    },
+    {
+      "label": "Valor da Energia Exportada na Modalidade Contratual em MWh",
+      "code": "val_modalidadecontratual",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT"
+    },
+    {
+      "label": "Valor da Energia Exportada na Modalidade Emergencial em MWh",
+      "code": "val_modalidadeemergencial",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT"
+    },
+    {
+      "label": "Valor da Energia Exportada na Modalidade Oportunidade em MWh",
+      "code": "val_modalidadeoportunidade",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT"
+    },
+    {
+      "label": "Valor da Energia Exportada na Modalidade Teste em MWh",
+      "code": "val_modalidadeteste",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT"
+    },
+    {
+      "label": "Valor da Energia Exportada na Modalidade Excepcional em MWh",
+      "code": "val_modalidadeexcepcional",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT"
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "dataset_slug": "programacao_fluxo_controlado",
+  "source_pdf": "dataset/programacao_fluxo_controlado/DicionarioDados_Programacao_Fluxo_Controlado.pdf",
+  "title": "DADOS DOS PROGRAMADOS DOS ELEMENTOS DE FLUXO CONTROLADO",
+  "description": "Dados programados dos elementos de fluxo controlado.",
+  "fields": [
+    {
+      "label": "Data de Referência da Programação Diária",
+      "code": "din_programacaodia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Número do Patamar",
+      "code": "num_patamar",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Nome do Elemento do Fluxo Controlado",
+      "code": "nom_elementofluxocontrolado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "500 POSIÇÕES",
+      "nullable": false,
+      "max_length": 500
+    },
+    {
+      "label": "Descrição do Elemento do Fluxo Controlado",
+      "code": "dsc_elementofluxocontrolado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "500 POSIÇÕES",
+      "nullable": false,
+      "max_length": 500
+    },
+    {
+      "label": "Tipo de Terminal",
+      "code": "tip_terminal",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Código do Submercado da Usina",
+      "code": "cod_submercado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "nullable": false,
+      "max_length": 3
+    },
+    {
+      "label": "Valor da Carga, em MW",
+      "code": "val_carga",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "10-09-2024",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

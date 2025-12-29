@@ -1,0 +1,85 @@
+{
+  "dataset_slug": "balanco_dessem_geral",
+  "source_pdf": "dataset/balanco_dessem_geral/DicionarioDados_Balanco_Dessem_Geral.pdf",
+  "title": "DADOS DO BALANÇO DE ENERGIA DESSEM - GERAL",
+  "description": "Balanço de energia simplificado do Dessem.",
+  "fields": [
+    {
+      "label": "Data de Referência da Programação Diária",
+      "code": "din_programacaodia",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "DD/MM/AAAA",
+      "nullable": false
+    },
+    {
+      "label": "Número do Patamar",
+      "code": "num_patamar",
+      "data_type": "INTEGER",
+      "raw_tipo": "INTEIRO",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Código do Subsistema",
+      "code": "cod_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "nullable": false,
+      "max_length": 2
+    },
+    {
+      "label": "Valor da Demanda, em (MW)",
+      "code": "val_demanda",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": false,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Geração de usina Renovável, em (MW)",
+      "code": "val_geracao_renovavel",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Geração de usina Hidráulica, em (MW)",
+      "code": "val_geracao_hidraulica",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da Geração de usina Térmica, em (MW)",
+      "code": "val_geracao_termica",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "code": "val_cons_elevatoria",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "22-05-2025",
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}

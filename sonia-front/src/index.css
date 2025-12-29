@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  margin: 0;
+  padding: 0;
+  --background-main: #F7F6F6;
+  --sidebar-bg: #FFFFFF;
+  --brand-blue: #002A75;
+  --brand-dark-blue: #002246;
+  --text-dark-blue: #090A59;
+  --accent-red: #F94300;
+  --messages-bg: #F3F7FA;
+  --user-message-border: rgba(0,0,0,0.04);
+  --bot-message-border: rgba(2,34,70,0.06);
+  --gray-light: #F3F3F3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Scrollbar padrão */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;             /* largura da scrollbar */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #F3F7FA;    /* cor do fundo da barra */
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #090A59;  /* cor do "dedo" da barra */
+  border-radius: 4px;
+  border: 2px solid #F3F7FA; /* opcional: espaço ao redor */
+}
+
+/* Para Firefox */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #090A59 #F3F7FA;
+}

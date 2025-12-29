@@ -1,0 +1,108 @@
+{
+  "dataset_slug": "restricao_coff_fotovoltaica_detail_tm",
+  "source_pdf": "dataset/restricao_coff_fotovoltaica_detail_tm/DicionarioDados_RestricaoContrainedoff_UsiFotovoltaica_Detail.pdf",
+  "title": "RESTRIÇÃO DE OPERAÇÃO POR CONSTRAINED-OFF DE USINAS FOTOVOLTAICAS– DETALHAMENTO POR USINA",
+  "description": "Informações associadas à apuração das restrições de operação por constrained-off nas usinas fotovoltaicas classificadas nas modalidades Tipo I, Tipo II-B e Tipo II-C, detalhadas por usina. Permite Permite Permite nulo zerado negativo Identificador do subsistema id_subsistema TEXTO 3 POSIÇÕES Não --- --- Sigla do Estado id_estado TEXTO 2 POSIÇÕES Não --- --- Modalidade de operação da usina nom_modalidadeoperacao TEXTO 20 POSIÇÕES Não --- --- Nome do Conjunto de Usinas nom_conjuntousina TEXTO 50 POSIÇÕES Sim --- --- (apenas para usinas com modalidade de operação Tipo II-C) Nome da Usina nom_usina TEXTO 50 POSIÇÕES Não --- --- Identificador da usina ou conjunto no ONS id_ons TEXTO 6 POSIÇÕES Não --- --- Código Único do Empreendimento de ceg TEXTO 30 POSIÇÕES Não --- --- Geração (CEG), estabelecido pela ANEEL",
+  "fields": [
+    {
+      "label": "Identificador do subsistema",
+      "code": "id_subsistema",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "3 POSIÇÕES",
+      "max_length": 3
+    },
+    {
+      "label": "Sigla do Estado",
+      "code": "id_estado",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "2 POSIÇÕES",
+      "max_length": 2
+    },
+    {
+      "label": "Modalidade de operação da usina",
+      "code": "nom_modalidadeoperacao",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "max_length": 20
+    },
+    {
+      "label": "Nome do Conjunto de Usinas (apenas para usinas com modalidade de operação Tipo II-C)",
+      "code": "nom_conjuntousina",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "50 POSIÇÕES",
+      "max_length": 50
+    },
+    {
+      "label": "Nome da Usina",
+      "code": "nom_usina",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "50 POSIÇÕES",
+      "max_length": 50
+    },
+    {
+      "label": "Identificador da usina ou conjunto no ONS",
+      "code": "id_ons",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "6 POSIÇÕES",
+      "max_length": 6
+    },
+    {
+      "label": "Código Único do Empreendimento de Geração (CEG), estabelecido pela ANEEL",
+      "code": "ceg",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "30 POSIÇÕES",
+      "max_length": 30
+    },
+    {
+      "label": "Data/Hora",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD"
+    },
+    {
+      "label": "Irradiância verificada, em W/m2",
+      "code": "val_irradianciaverificado",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Indicativo do dado de irradiância inválido. O dado é considerado inválido (flag = 1) quando há falha na medida recebida pelo Sistema de Supervisão e Controle do ONS por mais de 6 minutos dentro da semi-hora correspondente",
+      "code": "flg_dadoirradianciainvalido",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Valor da geração estimada da usina, em MWmed, obtida a partir do dado de irradiância verificado e da curva irradiância x potência ou, na indisponibilidade da curva, a partir do histórico de geração verificada.",
+      "code": "val_geracaoestimada",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    },
+    {
+      "label": "Geração verificada da usina, em MWmed.",
+      "code": "val_geracaoverificada",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": true,
+      "zero_allowed": true,
+      "negative_allowed": false
+    }
+  ],
+  "versions": []
+}

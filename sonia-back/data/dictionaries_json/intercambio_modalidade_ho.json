@@ -1,0 +1,77 @@
+{
+  "dataset_slug": "intercambio_modalidade_ho",
+  "source_pdf": "dataset/intercambio_modalidade_ho/DicionarioDados_Intercambio_Energia_Modalidade.pdf",
+  "title": "DADOS DE INTERCÂMBIO DE ENERGIA POR MODALIDADE",
+  "description": "Histórico de dados de intercâmbio de energia por modalidade discretizado em patamar horário, por conversora e montante de energia em MWh.",
+  "fields": [
+    {
+      "label": "Nome da Conversora",
+      "code": "nom_conversora",
+      "data_type": "STRING",
+      "raw_tipo": "TEXTO",
+      "format": "20 POSIÇÕES",
+      "nullable": false,
+      "max_length": 20
+    },
+    {
+      "label": "Data/hora (início do período de agregação)",
+      "code": "din_instante",
+      "data_type": "DATETIME",
+      "raw_tipo": "DATETIME",
+      "format": "YYYY-MM-DD",
+      "nullable": false
+    },
+    {
+      "label": "Valor da Energia Exportada na Modalidade Contratual em MWh",
+      "code": "val_modalidadecontratual",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor da Energia Exportada na Modalidade Emergencial em MWh",
+      "code": "val_modalidadeemergencial",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor da Energia Exportada na Modalidade Oportunidade em MWh",
+      "code": "val_modalidadeoportunidade",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor da Energia Exportada na Modalidade Teste em MWh",
+      "code": "val_modalidadeteste",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    },
+    {
+      "label": "Valor da Energia Exportada na Modalidade Excepcional em MWh",
+      "code": "val_modalidadeexcepcional",
+      "data_type": "FLOAT",
+      "raw_tipo": "FLOAT",
+      "nullable": false,
+      "zero_allowed": true,
+      "negative_allowed": true
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": null,
+      "notes": "Criação do Dicionário de dados"
+    }
+  ]
+}
